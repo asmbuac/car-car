@@ -84,11 +84,11 @@ export default function CustomerForm() {
     return (
         <div className="container">
             <div className="row">
-                <div className="offset-3 col-6">
+                <div className="offset-lg-3 col-lg-6">
                     <div className="shadow p-4 mt-4 rounded-3">
                         <div className="d-flex mb-3 align-items-center justify-content-center">
-                            <h1>Add a Customer</h1>
-                            <img src="https://cdn-icons-png.flaticon.com/512/2037/2037710.png" className="ms-2" style={{ width: "35px" }} />
+                            <h1 className="text-center">Add a Customer</h1>
+                            <img src="https://cdn-icons-png.flaticon.com/512/2037/2037710.png" className="ms-2 img-fluid" style={{ width: "40px" }} />
                         </div>
                         <form onSubmit={handleSubmit} className="row g-3">
                             <div className="col-12 form-floating">

@@ -73,7 +73,7 @@ export default function AddAutoForm() {
     return (
         <div className="container">
             <div className="row">
-                <div className="offset-3 col-6">
+                <div className="offset-lg-3 col-lg-6">
                     <div className="shadow p-4 mt-4">
                         <h1 className="text-center">Add an Automobile</h1>
                         <form onSubmit={handleSubmit} id="add-auto-form">

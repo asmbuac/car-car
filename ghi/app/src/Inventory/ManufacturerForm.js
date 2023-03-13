@@ -45,7 +45,7 @@ export default function ManufacturerForm() {
     return (
         <div className="container">
             <div className="row">
-                <div className="offset-3 col-6">
+                <div className="offset-lg-3 col-lg-6">
                     <div className="shadow p-4 mt-4 rounded-3">
                         <h1 className="text-center mb-3">Add a Manufacturer</h1>
                         <form onSubmit={handleSubmit}>

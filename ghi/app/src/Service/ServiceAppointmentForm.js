@@ -106,13 +106,13 @@ function AddServiceAppointment() {
     return (
         <div className="container">
             <div className="row">
-                <div className="offset-3 col-6">
-                    <div className="shadow p-4 mt-4">
+                <div className="offset-lg-3 col-lg-6">
+                    <div className="shadow p-4 mt-4 rounded-3">
                         <div className="d-flex mb-3 align-items-center justify-content-center">
-                            <h1 className="text-center">Create a Service Appointment</h1>
-                            <img src="https://img.icons8.com/stickers/75/null/tear-off-calendar.png" className="align-items-left" />
+                            <h1 className="text-center">Make a Service Appointment</h1>
+                            <img src="https://img.icons8.com/stickers/50/null/tear-off-calendar.png" className="ms-2 img-fluid" />
                         </div>
-                        <form onSubmit={handleSubmit} id="create-service-appointment-form">
+                        <form onSubmit={handleSubmit}>
                             <div className="form-floating mb-3">
                                 <input onChange={handleVinChange} value={vin} placeholder="VIN" required maxLength="17" type="text" name="vin" id="vin" className="form-control" />
                                 <label htmlFor="vin">VIN</label>
@@ -145,7 +145,9 @@ function AddServiceAppointment() {
                                     })}
                                 </select>
                             </div>
-                            <button className="btn btn-primary">Create</button>
+                            <div className="d-grid col-md-6 mx-auto">
+                                <button className="btn btn-warning" style={{ color: "white" }}>Make Appointment</button>
+                            </div>
                         </form>
                     </div>
                 </div>

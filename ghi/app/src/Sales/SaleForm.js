@@ -96,11 +96,11 @@ export default function SaleForm() {
     return (
         <div className="container">
             <div className="row">
-                <div className="offset-3 col-6">
+                <div className="offset-lg-3 col-lg-6">
                     <div className="shadow p-4 mt-4 rounded-3">
                         <div className="d-flex mb-3 align-items-center justify-content-center">
-                            <h1>Record a Sale</h1>
-                            <img src="https://cdn-icons-png.flaticon.com/512/5044/5044215.png" className="ms-2" style={{ width: "35px" }} />
+                            <h1 className="text-center">Record a Sale</h1>
+                            <img src="https://cdn-icons-png.flaticon.com/512/5044/5044215.png" className="ms-2 img-fluid" style={{ width: "40px" }} />
                         </div>
                         <form onSubmit={handleSubmit}>
                             <div className="form-floating mb-3">

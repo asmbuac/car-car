@@ -49,11 +49,11 @@ function AddTechnicianForm() {
     return (
         <div className="container">
             <div className="row">
-                <div className="offset-3 col-6">
-                    <div className="shadow p-4 mt-4">
+                <div className="offset-lg-3 col-lg-6">
+                    <div className="shadow p-4 mt-4 rounded-3">
                         <div className="d-flex mb-3 align-items-center justify-content-center">
-                            <h1 className="align-middle">Add a New Technician</h1>
-                            <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/65/null/external-mechanic-professions-woman-diversity-flaticons-lineal-color-flat-icons.png" className="ms-2" />
+                            <h1 className="text-center">Add a New Technician</h1>
+                            <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/50/null/external-mechanic-professions-woman-diversity-flaticons-lineal-color-flat-icons.png" className="ms-2 img-fluid" />
                         </div>
                         <form onSubmit={handleSubmit} id="add-technician-form">
                             <div className="form-floating mb-3">
