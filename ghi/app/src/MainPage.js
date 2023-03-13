@@ -20,11 +20,53 @@ function MainPage() {
       <div className="px-5 py-5 text-center" style={{ backgroundColor: "#E8E0D1" }}>
         <div className="container">
           <div className="py-5 bg-white rounded-4 shadow">
-            <h2 className="display-7 fw-bold" style={{ color: "#B69C91" }}>
+            <h2 className="display-7 fw-bold mb-4" style={{ color: "#B69C91" }}>
               At home or in-store,
               <br />
               we're here for you
             </h2>
+            <div className="row g-0 mx-3 mx-md-5 px-md-5">
+              <div className="col-6 col-lg-3">
+                <div className="card" style={{ border: "none" }}>
+                  <div className="card-body my-3">
+                    <img className="rounded-circle mb-3 w-100 min-vw-25" src="https://images.dealer.com/ddc/nada/2020/hs-videowalkaround2.jpg?impolicy=downsize_bkpt&w=704" />
+                    <div className="card-text">
+                      <h5 className="card-title" style={{ color: "#867C79" }}>Video Walkaround</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-6 col-lg-3">
+                <div className="card" style={{ border: "none" }}>
+                  <div className="card-body my-3">
+                    <img className="rounded-circle mb-3 w-100 min" src="https://images.dealer.com/ddc/nada/2020/hs-testdrive.png?impolicy=downsize_bkpt&w=704" />
+                    <div className="card-text">
+                      <h5 className="card-title" style={{ color: "#867C79" }}>Test Drive at Home</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-6 col-lg-3">
+                <div className="card" style={{ border: "none" }}>
+                  <div className="card-body my-3">
+                    <img className="rounded-circle mb-3 w-100 min" src="https://images.dealer.com/ddc/nada/2020/hs-delivery.png?impolicy=downsize_bkpt&w=1188" />
+                    <div className="card-text">
+                      <h5 className="card-title" style={{ color: "#867C79" }}>Home Delivery</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-6 col-lg-3">
+                <div className="card" style={{ border: "none" }}>
+                  <div className="card-body my-3">
+                    <img className="rounded-circle mb-3 w-100 min" src="https://images.dealer.com/ddc/nada/2020/hs-purshase-online.png?impolicy=downsize_bkpt&w=1188" />
+                    <div className="card-text">
+                      <h5 className="card-title" style={{ color: "#867C79" }}>Purchase Online</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -32,7 +74,7 @@ function MainPage() {
       {/* Why choose us */}
       <div className="px-5 py-5 text-center">
         <div className="container">
-          <h2 className="display-7 fw-bold mb-4">
+          <h2 className="display-7 fw-bold mb-4" style={{ color: "#867C79" }}>
             Why choose us
           </h2>
           <div className="row g-4">
@@ -118,7 +160,13 @@ function MainPage() {
                   Car shopping made easy
                 </h2>
                 <p className="lead">
-                  Kick back in our newly renovated service lounge and enjoy complimentary Wifi, gourmet coffee, tea, bottled water, HD TV and snacks. We also offer complimentary Lyft service for drop off and delivery within a 10 mile radius.
+                  It is our mission to be the automotive home of drivers in the Crystal Cove area. We provide the best selection of new and pre-owned vehicles, exceptional car care and customer service with a smile!
+                </p>
+                <p>
+                  Shopping for a car in Crystal Cove can sometimes be time-consuming. From finding the right vehicle to finding one within your price range. At CarCar, we don't believe in wasting our customer's time, and that's why from the moment you start browsing our inventory to the moment you drive home in your new vehicle, we work hard to streamline the car buying experience.
+                </p>
+                <p>
+                  One way we help our customers save time is through our knowledgeable staff. Our dedicated team in Crystal Cove can walk you through the ins and outs of each vehicle, so there isn't a question too big or too small they can't answer. Another way customers can save time shopping is by utilizing the various tools found on our website. Long before you're ever ready to set foot in a dealership, you can browse our inventory and search for the vehicle you want by make, model, and features.
                 </p>
               </div>
             </div>
@@ -207,7 +255,7 @@ function MainPage() {
         </div>
       </div>
 
-      {/* Map with Store Hours */}
+      {/* Map with Contact Info */}
       <div className="px-5 pb-5" >
         <div className="container">
           <div className="py-5">
@@ -224,7 +272,7 @@ function MainPage() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-7">
+              <div className="col-md-7 text-end">
                 <img className="img-fluid" src="https://media.istockphoto.com/id/1148810592/vector/travel-concept-router-in-a-map-cartoon-vector-illustration.jpg?s=170667a&w=0&k=20&c=St24cNP38L4VYuynjCfxcGzJbDZcrWLLWk9zYaTCjRc=" />
               </div>
             </div>
