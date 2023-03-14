@@ -16,7 +16,7 @@ function MainPage() {
 
       {/* Browse models */}
       <div className="px-5 py-5 text-center">
-        <h2 className="display-7 fw-bold mb-4">Browse our models</h2>
+        <h2 className="display-7 fw-bold mb-4" style={{ color: "#867C79" }}>Browse our models</h2>
         <CarCarousel />
       </div>
 
@@ -78,7 +78,7 @@ function MainPage() {
       {/* Why choose us */}
       <div className="px-5 py-5 text-center">
         <div className="container">
-          <h2 className="display-7 fw-bold mb-4" style={{ color: "#867C79" }}>
+          <h2 className="display-7 fw-bold mb-4">
             Why choose us
           </h2>
           <div className="row g-4">

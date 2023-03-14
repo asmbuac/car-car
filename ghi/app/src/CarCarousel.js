@@ -64,14 +64,14 @@ export default function CarCarousel() {
             </SwiperSlide>
           )
         })}
-        <div className="slider-controller container mt-5 pt-5">
-          <div className="swiper-button-prev slider-arrow">
+        <div className="slider-controller d-inline-flex container mt-5 pt-5 align-items-center justify-content-center">
+          <div className="swiper-button-prev slider-arrow shadow-sm">
             <ion-icon name="arrow-back-outline"></ion-icon>
           </div>
-          <div className="swiper-button-next slider-arrow">
+          <div className="swiper-pagination"></div>
+          <div className="swiper-button-next slider-arrow shadow-sm">
             <ion-icon name="arrow-forward-outline"></ion-icon>
           </div>
-          <div className="swiper-pagination"></div>
         </div>
       </Swiper>
     </>
