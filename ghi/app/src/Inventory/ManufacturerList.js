@@ -5,9 +5,9 @@ export default function ManufacturerList() {
     const manufacturers = useFetch("http://localhost:8100/api/manufacturers/", "manufacturers");
 
     return (
-        <div className="container">
-            <div className="mt-4">
-                <h1 className="text-center">Manufacturers</h1>
+        <div className="container mt-5 pt-1">
+            <div className="mt-5">
+                <h1 className="text-center mb-3">Manufacturers</h1>
                 <table className="table">
                     <thead>
                         <tr>

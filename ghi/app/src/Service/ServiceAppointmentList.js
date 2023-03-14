@@ -62,8 +62,8 @@ function ListServiceAppointments() {
 
     return (
         <>
-            <div className="container">
-                <h1 className="text-center my-4">Upcoming Appointments</h1>
+            <div className="container mt-5 pt-1">
+                <h1 className="text-center mt-5 mb-3">Upcoming Appointments</h1>
                 <table className="table align-middle">
                     <thead>
                         <tr>

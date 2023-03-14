@@ -43,7 +43,7 @@ export default function ManufacturerForm() {
     }
 
     return (
-        <div className="container">
+        <div className="container mt-5 pt-4">
             <div className="row">
                 <div className="offset-lg-3 col-lg-6">
                     <div className="shadow p-4 mt-4 rounded-3">

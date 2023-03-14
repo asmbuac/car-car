@@ -5,9 +5,9 @@ export default function VehicleModelList() {
     const vehicleModels = useFetch("http://localhost:8100/api/models/", "models");
 
     return (
-        <div className="container">
-            <div className="mt-4">
-                <h1 className="text-center">Vehicle Models</h1>
+        <div className="container mt-5 pt-1">
+            <div className="mt-5">
+                <h1 className="text-center mb-4">Vehicle Models</h1>
                 <table className="table">
                     <thead>
                         <tr>

@@ -30,11 +30,11 @@ function ListServiceHistory() {
 
     return (
         <>
-            <div className="container">
-                <div className="mt-4 d-flex flex-row-reverse align-items-center justify-content-between">
+            <div className="container mt-5 pt-1">
+                <div className="mt-5 mb-3 d-flex flex-row-reverse align-items-center justify-content-between">
                     <div>
                         <div className="input-group">
-                            <input className="form-control" type="text" id="vininput" name="vininput" maxLength="17" onChange={handleVinChange} value={vin}></input><button className="btn btn-sm btn-outline-info" onClick={fetchAppointmentList}>Search VIN</button>
+                            <input className="form-control" type="text" id="vininput" name="vininput" maxLength="17" onChange={handleVinChange} value={vin}></input><button className="btn btn-sm btn-warning text-white" onClick={fetchAppointmentList}>Search VIN</button>
                         </div>
                     </div>
                     <div className="p-2 flex-fill">

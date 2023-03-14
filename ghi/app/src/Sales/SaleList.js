@@ -5,8 +5,8 @@ export default function SaleList() {
     const sales = useFetch("http://localhost:8090/api/sales/", "sales");
 
     return (
-        <div className="container">
-            <div className="mt-4">
+        <div className="container mt-5 pt-1">
+            <div className="mt-5">
                 <div className="d-flex mb-3 align-items-center justify-content-center">
                     <h1>Record of Sales</h1>
                     <img src="https://cdn-icons-png.flaticon.com/512/4727/4727058.png" className="ms-2" style={{ width: "47px" }} />

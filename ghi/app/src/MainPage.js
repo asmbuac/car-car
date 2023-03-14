@@ -1,10 +1,12 @@
+import './index.css';
+
 function MainPage() {
   return (
     <>
-      <div className="px-5 py-5 my-5 text-center">
-        <h1 className="display-5 fw-bold">CarCar</h1>
-        <div className="col-lg-6 mx-auto">
-          <p className="lead mb-4">
+      <div className="px-5 py-5 text-center bg-image" style={{ backgroundImage: "url('https://img.freepik.com/free-vector/car-showroom-new-auto-dealership-big-room-hall-with-shop-window-glass-showcase_33099-911.jpg?w=2000&t=st=1678752287~exp=1678752887~hmac=2828fb8db3ae283cfd57db94ebc20cf5eb6369ca24dd5e1b9c8667ccca0ce6b6')" }}>
+        <h1 className="display-1 mt-5 pt-3 fw-bold text-white" style={{ textShadow: "2px 2px 2px rgba(0, 0, 0, 0.25)", fontFamily: "Sonsie One" }}>CarCar</h1>
+        <div className="col-lg-6 mx-auto align-bottom">
+          <p className="d-inline-flex lead px-3 py-1 rounded-pill shadow-sm" style={{ backgroundImage: "linear-gradient(#E8E0D1, #CEA461)" }}>
             The premiere solution for automobile dealership
             management!
           </p>
@@ -151,10 +153,10 @@ function MainPage() {
                   Kick back in our newly renovated service lounge and enjoy complimentary Wifi, gourmet coffee, tea, bottled water, HD TV and snacks. We also offer complimentary Lyft service for drop off and delivery within a 10 mile radius.
                 </p>
               </div>
-              <img className="img-fluid w-50" src="https://static.vecteezy.com/system/resources/previews/004/404/780/original/female-automotive-mechanic-repair-car-free-vector.jpg" />
+              <img className="img-fluid w-50" src="https://img.freepik.com/free-vector/roadside-service-abstract-concept-illustration_335657-4927.jpg?w=2000&t=st=1678750195~exp=1678750795~hmac=1d790aaf9791c0e0d3ddb438dd366b905a44e8329dce1adfbeccad89b8b46879" />
             </div>
-            <div className="mx-5 mt-3 d-flex justify-content-between align-items-center">
-              <img className="img-fluid w-50" src="https://img.freepik.com/premium-vector/car-showroom-manager-giving-details-about-car-couple_701961-2078.jpg" />
+            <div className="mx-5 d-flex justify-content-between align-items-center">
+              <img className="img-fluid w-50 align-self-top" src="https://img.freepik.com/free-vector/dealership-abstract-illustration_335657-5152.jpg?w=2000&t=st=1678749975~exp=1678750575~hmac=a75969b63918884549bb61f882208bdd8af5660d20fbc00cae7d1f70312517e1" />
               <div>
                 <h2 className="display-9 fw-bold" style={{ color: "#B97A63" }}>
                   Car shopping made easy
