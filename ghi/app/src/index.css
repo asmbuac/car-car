@@ -46,24 +46,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (min-width: 1440px) {
-  html {
-    zoom: 1.5;
-  }
-}
-
-@media (min-width: 2560px) {
-  html {
-    zoom: 1.7;
-  }
-}
-
-@media (min-width: 3860px) {
-  html {
-    zoom: 2.5;
-  }
-}
-
 ::-webkit-scrollbar {
   width: 0.8rem;
 }
@@ -157,4 +139,13 @@ html {
 .card:hover img {
   transform: translateY(-0.25rem);
   transition: 0.2s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler-icon,
+.navbar-toggler:focus,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
 }

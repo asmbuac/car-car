@@ -44,7 +44,7 @@ export default function CarCarousel() {
             <SwiperSlide>
               <div className="card rounded-4 shadow-sm" style={{ backgroundImage: "linear-gradient(140deg, #E8E0D1, #867C79)", border: "none" }}>
                 <div className="card-body mt-2 text-start">
-                  <h5 className="card-title text-white">{model.manufacturer.name}</h5>
+                  <h5 className="card-title fw-bold text-white mb-0">{model.manufacturer.name}</h5>
                   <div className="card-text text-white">
                     {model.name}
                   </div>

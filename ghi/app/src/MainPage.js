@@ -146,8 +146,11 @@ function MainPage() {
       <div className="px-5 py-5" style={{ backgroundImage: "linear-gradient(180deg, #CEA461, #B97A63 70%, white)" }}>
         <div className="container">
           <div className="py-5 bg-white rounded-4 shadow">
-            <div className="mx-5 d-flex justify-content-between align-items-center">
-              <div>
+            <div className="mx-5 row justify-content-between align-items-center">
+              <div className="col-md">
+                <img className="img-fluid" src="https://img.freepik.com/free-vector/roadside-service-abstract-concept-illustration_335657-4927.jpg?w=2000&t=st=1678750195~exp=1678750795~hmac=1d790aaf9791c0e0d3ddb438dd366b905a44e8329dce1adfbeccad89b8b46879" />
+              </div>
+              <div className="col-md">
                 <h2 className="display-9 fw-bold" style={{ color: "#CEA461" }}>
                   Schedule your next service appointment
                 </h2>
@@ -155,11 +158,9 @@ function MainPage() {
                   Kick back in our newly renovated service lounge and enjoy complimentary Wifi, gourmet coffee, tea, bottled water, HD TV and snacks. We also offer complimentary Lyft service for drop off and delivery within a 10 mile radius.
                 </p>
               </div>
-              <img className="img-fluid w-50" src="https://img.freepik.com/free-vector/roadside-service-abstract-concept-illustration_335657-4927.jpg?w=2000&t=st=1678750195~exp=1678750795~hmac=1d790aaf9791c0e0d3ddb438dd366b905a44e8329dce1adfbeccad89b8b46879" />
             </div>
-            <div className="mx-5 d-flex justify-content-between align-items-center">
-              <img className="img-fluid w-50 align-self-top" src="https://img.freepik.com/free-vector/dealership-abstract-illustration_335657-5152.jpg?w=2000&t=st=1678749975~exp=1678750575~hmac=a75969b63918884549bb61f882208bdd8af5660d20fbc00cae7d1f70312517e1" />
-              <div>
+            <div className="mx-5 row justify-content-between align-items-center">
+              <div className="col-md">
                 <h2 className="display-9 fw-bold" style={{ color: "#B97A63" }}>
                   Car shopping made easy
                 </h2>
@@ -172,6 +173,9 @@ function MainPage() {
                 <p>
                   One way we help our customers save time is through our knowledgeable staff. Our dedicated team in Crystal Cove can walk you through the ins and outs of each vehicle, so there isn't a question too big or too small they can't answer. Another way customers can save time shopping is by utilizing the various tools found on our website. Long before you're ever ready to set foot in a dealership, you can browse our inventory and search for the vehicle you want by make, model, and features.
                 </p>
+              </div>
+              <div className="col-md">
+                <img className="img-fluid align-self-top" src="https://img.freepik.com/free-vector/dealership-abstract-illustration_335657-5152.jpg?w=2000&t=st=1678749975~exp=1678750575~hmac=a75969b63918884549bb61f882208bdd8af5660d20fbc00cae7d1f70312517e1" />
               </div>
             </div>
           </div>
@@ -270,9 +274,17 @@ function MainPage() {
                     <h2 className="display-9 fw-bold" style={{ color: "#867C79" }}>
                       Contact Info
                     </h2>
-                    <p className="lead">
-                      Kick back in our newly renovated service lounge and enjoy complimentary Wifi, gourmet coffee, tea, bottled water, HD TV and snacks. We also offer complimentary Lyft service for drop off and delivery within a 10 mile radius.
-                    </p>
+                    <div className="lead">
+                      <span className="fw-bold">Main Location:</span> 55 CarCar St, Crystal Cove, CA
+                      <br />
+                      <span className="fw-bold">Sales Phone:</span> (555) 555-5555
+                      <br />
+                      <span className="fw-bold">Sales Email:</span> sales@carcar.test
+                      <br />
+                      <span className="fw-bold">Service Phone:</span> (333) 333-3333
+                      <br />
+                      <span className="fw-bold">Service Email:</span> carcar@frontendbc.test
+                    </div>
                   </div>
                 </div>
               </div>
