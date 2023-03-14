@@ -8,6 +8,8 @@ export default function AddAutoForm() {
     const [color, setColor] = useState('');
     const [year, setYear] = useState('');
     const [vin, setVin] = useState('');
+    const [msrp, setMsrp] = useState('');
+    const [mpg, setMpg] = useState('');
     const [modelId, setModelId] = useState('');
     const models = useFetch("http://localhost:8100/api/models/", "models");
     const navigate = useNavigate();
@@ -27,6 +29,16 @@ export default function AddAutoForm() {
         setVin(value);
     }
 
+    const handleMsrpChange = (event) => {
+        const value = event.target.value;
+        setMsrp(value);
+    }
+
+    const handleMpgChange = (event) => {
+        const value = event.target.value;
+        setMpg(value);
+    }
+
     const handleModelIdChange = (event) => {
         const value = event.target.value;
         setModelId(value);
@@ -35,12 +47,14 @@ export default function AddAutoForm() {
     const handleSubmit = async (event) => {
         event.preventDefault();
 
-        const data = {}
-
-        data.color = color;
-        data.year = year;
-        data.vin = vin;
-        data.model_id = modelId;
+        const data = {
+            color,
+            year,
+            vin,
+            msrp,
+            mpg,
+            model_id: modelId,
+        }
 
         const autoUrl = "http://localhost:8100/api/automobiles/";
 
@@ -59,6 +73,8 @@ export default function AddAutoForm() {
                 setColor('');
                 setYear('');
                 setVin('');
+                setMsrp('');
+                setMpg('');
                 setModelId('');
                 navigate('/inventory/automobiles');
                 toast(`Successfully added a ${newAutomobile.color} ${newAutomobile.year} ${newAutomobile.model.manufacturer.name} ${newAutomobile.model.name} to the inventory!`);
@@ -75,7 +91,7 @@ export default function AddAutoForm() {
             <div className="row">
                 <div className="offset-lg-3 col-lg-6">
                     <div className="shadow p-4 mt-4">
-                        <h1 className="text-center">Add an Automobile</h1>
+                        <h1 className="text-center mb-3">Add an Automobile</h1>
                         <form onSubmit={handleSubmit} id="add-auto-form">
                             <div className="form-floating mb-3">
                                 <input onChange={handleColorChange} value={color} placeholder="Color" required type="text" name="color" id="color" maxLength="50" className="form-control" />
@@ -88,6 +104,14 @@ export default function AddAutoForm() {
                             <div className="form-floating mb-3">
                                 <input onChange={handleVinChange} value={vin} placeholder="VIN" required type="text" maxLength="17" name="vin" id="vin" className="form-control" />
                                 <label htmlFor="vin">VIN</label>
+                            </div>
+                            <div className="form-floating mb-3">
+                                <input onChange={handleMsrpChange} value={msrp} placeholder="MSRP" required type="number" min="1" max="2147483647" name="msrp" id="msrp" className="form-control" />
+                                <label htmlFor="msrp">MSRP</label>
+                            </div>
+                            <div className="form-floating mb-3">
+                                <input onChange={handleMpgChange} value={mpg} placeholder="MPG" required type="text" name="mpg" id="mpg" maxLength="50" className="form-control" />
+                                <label htmlFor="mpg">MPG</label>
                             </div>
                             <div className="mb-3">
                                 <select onChange={handleModelIdChange} value={modelId} required name="model_id" id="model_id" className="form-select">

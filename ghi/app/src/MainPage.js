@@ -1,4 +1,5 @@
 import './index.css';
+import CarCarousel from './CarCarousel';
 
 function MainPage() {
   return (
@@ -14,8 +15,9 @@ function MainPage() {
       </div>
 
       {/* Browse models */}
-      <div className="px-5 py-5 text-center" style={{ backgroundImage: "linear-gradient(140deg, #E8E0D1 0%, #CEA461 50%, #B97A63 75%)" }}>
-        <h2 className="display-7 fw-bold text-light">Browse our models</h2>
+      <div className="px-5 py-5 text-center">
+        <h2 className="display-7 fw-bold mb-4">Browse our models</h2>
+        <CarCarousel />
       </div>
 
       {/* Here for you */}
@@ -81,7 +83,7 @@ function MainPage() {
           </h2>
           <div className="row g-4">
             <div className="col-md-6 col-lg-3">
-              <div className="card shadow" style={{ backgroundColor: "#E8E0D1", border: "none" }}>
+              <div className="card rounded-4 shadow" style={{ backgroundColor: "#E8E0D1", border: "none" }}>
                 <div className="card-body mx-2 my-3">
                   <p className="lead fst-italic">
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nobis quo incidunt
@@ -95,7 +97,7 @@ function MainPage() {
               </div>
             </div>
             <div className="col-md-6 col-lg-3 text-white">
-              <div className="card shadow" style={{ backgroundColor: "#B97A63", border: "none" }}>
+              <div className="card rounded-4 shadow" style={{ backgroundColor: "#B97A63", border: "none" }}>
                 <div className="card-body mx-2 my-3">
                   <p className="lead fst-italic">
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nobis quo incidunt
@@ -109,7 +111,7 @@ function MainPage() {
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
-              <div className="card shadow" style={{ backgroundColor: "#E8E0D1", border: "none" }}>
+              <div className="card rounded-4 shadow" style={{ backgroundColor: "#E8E0D1", border: "none" }}>
                 <div className="card-body mx-2 my-3">
                   <p className="lead fst-italic">
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nobis quo incidunt
@@ -123,7 +125,7 @@ function MainPage() {
               </div>
             </div>
             <div className="col-md-6 col-lg-3 text-white">
-              <div className="card shadow" style={{ backgroundColor: "#B97A63", border: "none" }}>
+              <div className="card rounded-4 shadow" style={{ backgroundColor: "#B97A63", border: "none" }}>
                 <div className="card-body mx-2 my-3">
                   <p className="lead fst-italic">
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nobis quo incidunt

@@ -27,6 +27,8 @@ class Automobile(models.Model):
     color = models.CharField(max_length=50)
     year = models.PositiveSmallIntegerField()
     vin = models.CharField(max_length=17, unique=True)
+    msrp = models.PositiveIntegerField()
+    mpg = models.CharField(max_length=50)
 
     model = models.ForeignKey(
         VehicleModel,
