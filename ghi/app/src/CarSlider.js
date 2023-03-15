@@ -9,9 +9,10 @@ import 'swiper/css/navigation';
 
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 
-export default function CarCarousel() {
-  const models = useFetch('http://localhost:8100/api/models/', 'models');
+export default function CarSlider() {
   const cars = useFetch('http://localhost:8100/api/automobiles/', 'autos');
+
+  console.log(cars)
 
   return (
     <>
@@ -33,26 +34,25 @@ export default function CarCarousel() {
           clickable: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="container"
       >
-        {models && models.map(model => {
+        {cars && cars.map(car => {
           return (
             <SwiperSlide>
               <div className="card rounded-4 shadow-sm" style={{ backgroundImage: "linear-gradient(140deg, #E8E0D1, #867C79)", border: "none" }}>
                 <div className="card-body mt-2 text-start">
-                  <h5 className="card-title fw-bold text-white mb-0">{model.manufacturer.name}</h5>
+                  <h5 className="card-title fw-bold text-white mb-0">{car.model.manufacturer.name}</h5>
                   <div className="card-text text-white">
-                    {model.name}
+                    {car.model.name}
                   </div>
-                  <img className="my-2 w-100 min-vw-25 img-fluid" src={model.picture_url} />
+                  <img className="my-2 w-100 min-vw-25 img-fluid" src={car.model.picture_url} />
                   <div className="text-white">
                     <div className="d-flex align-items-center justify-content-end ms-3">
                       <i className="ri-dashboard-3-line me-1"></i>
-                      <small className="">29 mph</small>
+                      <small className="">{car.mpg}</small>
                     </div>
                     <div className="d-flex align-items-center justify-content-end mb-2">
                       <i className="ri-shopping-bag-2-line me-1"></i>
-                      <small>$99,900</small>
+                      <small>${car.msrp}</small>
                     </div>
                   </div>
                 </div>

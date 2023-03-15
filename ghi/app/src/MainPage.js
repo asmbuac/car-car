@@ -1,5 +1,5 @@
 import './index.css';
-import CarCarousel from './CarCarousel';
+import CarSlider from './CarSlider';
 import Footer from './Footer';
 
 function MainPage() {
@@ -18,7 +18,7 @@ function MainPage() {
       {/* Browse models */}
       <div className="px-5 py-5 text-center">
         <h2 className="display-7 fw-bold mb-4" style={{ color: "#867C79" }}>Browse our models</h2>
-        <CarCarousel />
+        <CarSlider />
       </div>
 
       {/* Here for you */}
