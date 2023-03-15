@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import useFetch from '../useFetch';
+import FormButton from "../FormButton";
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -90,7 +91,7 @@ export default function AddAutoForm() {
         <div className="container mt-5 pt-4">
             <div className="row">
                 <div className="offset-lg-3 col-lg-6">
-                    <div className="shadow p-4 mt-4">
+                    <div className="shadow p-4 mt-4 rounded-3">
                         <h1 className="text-center mb-3">Add an Automobile</h1>
                         <form onSubmit={handleSubmit} id="add-auto-form">
                             <div className="form-floating mb-3">
@@ -113,7 +114,7 @@ export default function AddAutoForm() {
                                 <input onChange={handleMpgChange} value={mpg} placeholder="MPG" required type="text" name="mpg" id="mpg" maxLength="50" className="form-control" />
                                 <label htmlFor="mpg">MPG</label>
                             </div>
-                            <div className="mb-3">
+                            <div className="form-floating mb-3">
                                 <select onChange={handleModelIdChange} value={modelId} required name="model_id" id="model_id" className="form-select">
                                     <option value="">Choose a make and model</option>
                                     {models.map(model => {
@@ -124,10 +125,9 @@ export default function AddAutoForm() {
                                         )
                                     })}
                                 </select>
+                                <label htmlFor="model_id">Make and Model</label>
                             </div>
-                            <div className="d-grid col-md-6 mx-auto">
-                                <button className="btn btn-outline-primary">Add Automobile</button>
-                            </div>
+                            <FormButton buttonText={"Add Automobile"} />
                         </form>
                     </div>
                 </div>

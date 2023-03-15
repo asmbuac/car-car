@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import FormButton from '../FormButton';
 
 export default function ManufacturerForm() {
     const [name, setName] = useState("");
@@ -54,9 +55,7 @@ export default function ManufacturerForm() {
                                     className="form-control" />
                                 <label htmlFor="name">Name</label>
                             </div>
-                            <div className="d-grid col-md-6 mx-auto">
-                                <button className="btn btn-outline-primary">Add Manufacturer</button>
-                            </div>
+                            <FormButton buttonText={'Add Manufacturer'} />
                         </form>
                     </div>
                 </div>

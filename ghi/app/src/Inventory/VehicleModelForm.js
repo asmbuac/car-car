@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import useFetch from '../useFetch';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import FormButton from '../FormButton';
 
 export default function VehicleModelForm() {
     const [name, setName] = useState("");
@@ -87,9 +88,7 @@ export default function VehicleModelForm() {
                                 </select>
                                 <label htmlFor="manufacturer">Manufacturer</label>
                             </div>
-                            <div className="d-grid col-md-6 mx-auto">
-                                <button className="btn btn-outline-primary">Add Model</button>
-                            </div>
+                            <FormButton buttonText={'Add Model'} />
                         </form>
                     </div>
                 </div>

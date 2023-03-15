@@ -6,7 +6,6 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import './index.css';
 
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 
@@ -20,13 +19,10 @@ export default function CarCarousel() {
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
-        loop={true}
         slidesPerView={3}
+        initialSlide={2}
         coverflowEffect={
           {
-            rotate: 0,
-            stretch: 0,
-            depth: 100,
             modifier: 2.5,
           }
         }
@@ -39,7 +35,7 @@ export default function CarCarousel() {
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="container"
       >
-        {models.map(model => {
+        {models && models.map(model => {
           return (
             <SwiperSlide>
               <div className="card rounded-4 shadow-sm" style={{ backgroundImage: "linear-gradient(140deg, #E8E0D1, #867C79)", border: "none" }}>

@@ -12,25 +12,29 @@ export default function AutomobileList() {
                     <thead>
                         <tr>
                             <th></th>
-                            <th scope="col">Year</th>
-                            <th scope="col">Color</th>
-                            <th scope="col">Make</th>
-                            <th scope="col">Model</th>
-                            <th scope="col">VIN</th>
+                            <th>Year</th>
+                            <th>Color</th>
+                            <th>Make</th>
+                            <th>Model</th>
+                            <th>VIN</th>
+                            <th>MSRP</th>
+                            <th>MPG (city/highway)</th>
                         </tr>
                     </thead>
                     <tbody className="table-group-divider">
                         {autos.map(auto => {
                             return (
                                 <tr key={auto.href}>
-                                    <td className="w-25">
-                                        <img src={auto.model.picture_url} className="img-thumbnail" />
+                                    <td className="w-25 text-center">
+                                        <img src={auto.model.picture_url} className="w-75" />
                                     </td>
                                     <td>{auto.year}</td>
                                     <td>{auto.color}</td>
                                     <td>{auto.model.manufacturer.name}</td>
                                     <td>{auto.model.name}</td>
                                     <td>{auto.vin}</td>
+                                    <td>{auto.msrp}</td>
+                                    <td>{auto.mpg}</td>
                                 </tr>
                             )
                         })}

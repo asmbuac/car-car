@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
+import FormButton from "../FormButton";
 
 function AddServiceAppointment() {
 
@@ -145,9 +146,7 @@ function AddServiceAppointment() {
                                     })}
                                 </select>
                             </div>
-                            <div className="d-grid col-md-6 mx-auto">
-                                <button className="btn btn-warning" style={{ color: "white" }}>Make Appointment</button>
-                            </div>
+                            <FormButton buttonText={'Make Appointment'} />
                         </form>
                     </div>
                 </div>

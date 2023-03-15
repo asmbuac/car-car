@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import FormButton from '../FormButton';
 
 export default function CustomerForm() {
     const [name, setName] = useState("");
@@ -123,9 +124,7 @@ export default function CustomerForm() {
                                     <label htmlFor="zip_code">Zip Code</label>
                                 </div>
                             </div>
-                            <div className="d-grid col-md-6 mx-auto">
-                                <button className="btn btn-outline-primary">Add Customer</button>
-                            </div>
+                            <FormButton buttonText={'Add Customer'} />
                         </form>
                     </div>
                 </div>

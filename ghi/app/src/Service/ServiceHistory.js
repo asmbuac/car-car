@@ -24,10 +24,6 @@ function ListServiceHistory() {
         }
     }
 
-
-
-
-
     return (
         <>
             <div className="container mt-5 pt-1">

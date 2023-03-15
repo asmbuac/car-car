@@ -1,11 +1,12 @@
 import './index.css';
 import CarCarousel from './CarCarousel';
+import Footer from './Footer';
 
 function MainPage() {
   return (
     <>
       <div className="px-5 py-5 text-center bg-image" style={{ backgroundImage: "url('https://img.freepik.com/free-vector/car-showroom-new-auto-dealership-big-room-hall-with-shop-window-glass-showcase_33099-911.jpg?w=2000&t=st=1678752287~exp=1678752887~hmac=2828fb8db3ae283cfd57db94ebc20cf5eb6369ca24dd5e1b9c8667ccca0ce6b6')" }}>
-        <h1 className="display-1 mt-5 pt-3 fw-bold text-white" style={{ textShadow: "2px 2px 2px rgba(0, 0, 0, 0.25)", fontFamily: "Sonsie One" }}>CarCar</h1>
+        <h1 className="display-1 mt-5 pt-3 fw-bold text-white" style={{ textShadow: "2px 2px 2px rgba(0, 0, 0, 0.3)", fontFamily: "Sonsie One" }}>CarCar</h1>
         <div className="col-lg-6 mx-auto align-bottom">
           <p className="d-inline-flex lead px-3 py-1 rounded-pill shadow-sm" style={{ backgroundImage: "linear-gradient(#E8E0D1, #CEA461)" }}>
             The premiere solution for automobile dealership
@@ -267,15 +268,15 @@ function MainPage() {
       <div className="px-5 pb-5" >
         <div className="container">
           <div className="py-5">
-            <div className="row justify-content-between align-items-center">
+            <div className="row gy-5 justify-content-between align-items-center">
               <div className="col-md-5">
-                <div className="py-5 rounded-4 shadow" style={{ backgroundColor: "#E8E0D1" }}>
+                <div className="py-5 rounded-4" style={{ boxShadow: "3px 3px 15px #E8E0D1" }}>
                   <div className="mx-5">
                     <h2 className="display-9 fw-bold" style={{ color: "#867C79" }}>
                       Contact Info
                     </h2>
                     <div className="lead">
-                      <span className="fw-bold">Main Location:</span> 55 CarCar St, Crystal Cove, CA
+                      <span className="fw-bold">Address:</span> 55 CarCar St, Crystal Cove, CA
                       <br />
                       <span className="fw-bold">Sales Phone:</span> (555) 555-5555
                       <br />
@@ -288,13 +289,16 @@ function MainPage() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-7 text-end">
-                <img className="img-fluid" src="https://media.istockphoto.com/id/1148810592/vector/travel-concept-router-in-a-map-cartoon-vector-illustration.jpg?s=170667a&w=0&k=20&c=St24cNP38L4VYuynjCfxcGzJbDZcrWLLWk9zYaTCjRc=" />
+              <div className="col-md-7">
+                <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=55%20CarCar%20St,%20Crystal%20Cove,%20CA%20Crystal%20Cove+(CarCar)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" className="w-100 rounded-4"></iframe>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <Footer />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import FormButton from '../FormButton';
 
 export default function SalesPersonForm() {
     const [name, setName] = useState("");
@@ -64,9 +65,7 @@ export default function SalesPersonForm() {
                                 <input value={employeeNumber} onChange={handleEmployeeNumberChange} placeholder="Employee Number" required type="number" min="0" max="2147483647" name="employee_number" id="employee_number" className="form-control" />
                                 <label htmlFor="employee_number">Employee Number</label>
                             </div>
-                            <div className="d-grid col-sm-6 mx-auto">
-                                <button className="btn btn-outline-primary">Add Sales Person</button>
-                            </div>
+                            <FormButton buttonText={'Add Sales Person'} />
                         </form>
                     </div>
                 </div>

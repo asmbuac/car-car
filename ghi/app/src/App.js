@@ -3,6 +3,7 @@ import { ToastContainer } from 'react-toastify';
 
 import MainPage from './MainPage';
 import Nav from './Nav';
+import Footer from './Footer';
 import AddAutoForm from './Inventory/AutomobileForm';
 import AutomobileList from './Inventory/AutomobileList';
 import ManufacturerForm from './Inventory/ManufacturerForm';

@@ -148,4 +148,25 @@ html {
   outline: none;
   box-shadow: none;
   border: none;
+  transform: scale(0.9);
+}
+
+.form-btn {
+  background-color: white;
+  border: 1px solid #B97A63;
+  color: #B97A63;
+  transition: 0.3s;
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  background-image: linear-gradient(#E8E0D1, #CEA461, #B97A63);
+  color: white;
+  transition: 0.3s;
+  border: 1px solid white;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
 }

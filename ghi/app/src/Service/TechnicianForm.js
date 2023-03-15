@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import FormButton from "../FormButton";
 
 function AddTechnicianForm() {
 
@@ -64,7 +65,7 @@ function AddTechnicianForm() {
                                 <input onChange={handleEmployeeNumberChange} value={employeeNumber} placeholder="Employee Number" required type="number" name="employee_number" id="employee_number" className="form-control" />
                                 <label htmlFor="employee_number">Employee Number</label>
                             </div>
-                            <button className="btn btn-primary">Add Technician</button>
+                            <FormButton buttonText={'Add Technician'} />
                         </form>
                     </div>
                 </div>

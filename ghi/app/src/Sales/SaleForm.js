@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import FormButton from '../FormButton';
 import useFetch from '../useFetch';
 
 export default function SaleForm() {
@@ -10,7 +11,6 @@ export default function SaleForm() {
     const [price, setPrice] = useState("");
     const [carSales, setCarSales] = useState([]);
     const [unsoldCars, setUnsoldCars] = useState([]);
-    const [isLoading, setIsLoading] = useState(false);
 
     const autos = useFetch("http://localhost:8100/api/automobiles/", "autos");
     const salesPeople = useFetch("http://localhost:8090/api/sales-people/", "sales_people");
@@ -53,7 +53,6 @@ export default function SaleForm() {
 
         try {
             const response = await fetch(url, fetchConfig);
-            setIsLoading(true);
             if (response.ok) {
                 const newSale = await response.json();
                 setCarSales(oldSales => [...oldSales, newSale]);
@@ -61,7 +60,6 @@ export default function SaleForm() {
                 setSalesPerson("");
                 setCustomer("");
                 setPrice("");
-                setIsLoading(false);
                 toast(`💸 ${newSale.sales_person.name} sold a car to ${newSale.customer.name}!`);
             }
         } catch (e) {
@@ -146,9 +144,7 @@ export default function SaleForm() {
                                 <input value={price} onChange={handlePriceChange} placeholder="Price" required type="number" min="1" max="2147483647" name="price" id="price" className="form-control" />
                                 <label htmlFor="price">Sale price</label>
                             </div>
-                            <div className="d-grid col-md-6 mx-auto">
-                                {!isLoading ? <button className="btn btn-outline-primary">Record Sale</button> : <button className="btn btn-outline-primary">Loading... Press me again in about 10 seconds</button>}
-                            </div>
+                            <FormButton buttonText={'Record Sale'} />
                         </form>
                     </div>
                 </div>
