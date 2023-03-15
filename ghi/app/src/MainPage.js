@@ -5,7 +5,7 @@ import Footer from './Footer';
 function MainPage() {
   return (
     <>
-      <div className="px-5 py-5 text-center bg-image" style={{ backgroundImage: "url('https://img.freepik.com/free-vector/car-showroom-new-auto-dealership-big-room-hall-with-shop-window-glass-showcase_33099-911.jpg?w=2000&t=st=1678752287~exp=1678752887~hmac=2828fb8db3ae283cfd57db94ebc20cf5eb6369ca24dd5e1b9c8667ccca0ce6b6')" }}>
+      <div className="px-5 py-5 text-center bg-image" style={{ backgroundImage: "url('https://img.freepik.com/free-vector/car-showroom-new-auto-dealership-big-room-hall-with-shop-window-glass-showcase_33099-911.jpg?w=2000&t=st=1678920756~exp=1678921356~hmac=fb5765ba21dac581b1f55a0c10a5946ea00a4fb9ac62fe77903b33b3cf24e17f')" }}>
         <h1 className="display-1 mt-5 pt-3 fw-bold text-white" style={{ textShadow: "2px 2px 2px rgba(0, 0, 0, 0.3)", fontFamily: "Sonsie One" }}>CarCar</h1>
         <div className="col-lg-6 mx-auto align-bottom">
           <p className="d-inline-flex lead px-3 py-1 rounded-pill shadow-sm" style={{ backgroundImage: "linear-gradient(#E8E0D1, #CEA461)" }}>
@@ -290,7 +290,7 @@ function MainPage() {
                 </div>
               </div>
               <div className="col-md-7">
-                <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=55%20CarCar%20St,%20Crystal%20Cove,%20CA%20Crystal%20Cove+(CarCar)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" className="w-100 rounded-4"></iframe>
+                <iframe width="520" height="400" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=55%20CarCar%20St,%20Crystal%20Cove,%20CA%20Crystal%20Cove+(CarCar)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" className="w-100 rounded-4"></iframe>
               </div>
             </div>
           </div>

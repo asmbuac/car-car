@@ -12,16 +12,14 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 export default function CarSlider() {
   const cars = useFetch('http://localhost:8100/api/automobiles/', 'autos');
 
-  console.log(cars)
-
   return (
     <>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
+        loop={true}
         centeredSlides={true}
         slidesPerView={3}
-        initialSlide={2}
         coverflowEffect={
           {
             modifier: 2.5,
@@ -37,7 +35,7 @@ export default function CarSlider() {
       >
         {cars && cars.map(car => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={car.id}>
               <div className="card rounded-4 shadow-sm" style={{ backgroundImage: "linear-gradient(140deg, #E8E0D1, #867C79)", border: "none" }}>
                 <div className="card-body mt-2 text-start">
                   <h5 className="card-title fw-bold text-white mb-0">{car.model.manufacturer.name}</h5>
