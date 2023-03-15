@@ -7,7 +7,7 @@ export default function VehicleModelList() {
     return (
         <div className="container mt-5 pt-1">
             <div className="mt-5">
-                <h1 className="text-center mb-4">Vehicle Models</h1>
+                <h1 className="text-center mb-3">Vehicle Models</h1>
                 <table className="table">
                     <thead>
                         <tr>
