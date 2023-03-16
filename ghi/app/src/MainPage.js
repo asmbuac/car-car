@@ -5,7 +5,7 @@ import Footer from './Footer';
 function MainPage() {
   return (
     <>
-      <div className="px-5 py-5 text-center bg-image" style={{ backgroundImage: "url('https://img.freepik.com/free-vector/car-showroom-new-auto-dealership-big-room-hall-with-shop-window-glass-showcase_33099-911.jpg?w=2000&t=st=1678920756~exp=1678921356~hmac=fb5765ba21dac581b1f55a0c10a5946ea00a4fb9ac62fe77903b33b3cf24e17f')" }}>
+      <div className="px-5 py-5 text-center bg-image" style={{ backgroundImage: "url('https://img.freepik.com/free-vector/car-showroom-new-auto-dealership-big-room-hall-with-shop-window-glass-showcase_33099-911.jpg?w=1800&t=st=1678998264~exp=1678998864~hmac=93ac19c0fd110d38286f458b8e02b3390d8543420028cc7a5936f2ee262db8d0')" }}>
         <h1 className="display-1 mt-5 pt-3 fw-bold text-white" style={{ textShadow: "2px 2px 2px rgba(0, 0, 0, 0.3)", fontFamily: "Sonsie One" }}>CarCar</h1>
         <div className="col-lg-6 mx-auto align-bottom">
           <p className="d-inline-flex lead px-3 py-1 rounded-pill shadow-sm" style={{ backgroundImage: "linear-gradient(#E8E0D1, #CEA461)" }}>

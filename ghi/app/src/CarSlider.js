@@ -17,9 +17,9 @@ export default function CarSlider() {
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
-        loop={true}
         centeredSlides={true}
         slidesPerView={3}
+        initialSlide={2}
         coverflowEffect={
           {
             modifier: 2.5,
