@@ -284,7 +284,7 @@ function MainPage() {
                       <br />
                       <span className="fw-bold">Service Phone:</span> (333) 333-3333
                       <br />
-                      <span className="fw-bold">Service Email:</span> carcar@frontendbc.test
+                      <span className="fw-bold">Service Email:</span> service@carcar.test
                     </div>
                   </div>
                 </div>
